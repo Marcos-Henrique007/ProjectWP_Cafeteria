@@ -1,45 +1,117 @@
-body{
-    font-family: Arial;
-    margin:0;
-    background:#ffffff;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    background:#ff0000;
-    color:white;
-    padding:15px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* Corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #6b4f4f, #c8a97e);
+    color: #333;
 }
 
-nav a, nav button{
-    margin:5px;
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #6b4f4f;
+    color: white;
 }
 
-main{
-    padding:20px;
+header img {
+    border-radius: 50%;
 }
 
-section{
-    margin-bottom:30px;
+/* NAV */
+nav {
+    display: flex;
+    gap: 10px;
 }
 
-button{
-    padding:10px;
-    border:none;
-    background:#000000;
-    color:white;
-    cursor:pointer;
+nav button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #c8a97e;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-button:hover{
-    background:#cc5200;
+nav button:hover {
+    background: #b8956b;
+    transform: scale(1.05);
 }
 
-footer{
-    background:#ff0000;
-    color:white;
-    text-align:center;
-    padding:10px;
+/* MAIN */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #6b4f4f;
+}
+
+/* CARD (article) */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+article img {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXTO */
+p {
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background: #6b4f4f;
+    color: white;
+}
+
+footer a {
+    color: #c8a97e;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

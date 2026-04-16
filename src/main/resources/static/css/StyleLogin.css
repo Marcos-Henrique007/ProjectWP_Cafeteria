@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #6b4f4f, #c8a97e);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background: #6b4f4f;
+    padding: 15px 30px;
+}
+
+header a {
+    color: #c8a97e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TÍTULO */
+main h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* SEÇÕES */
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABEL */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* INPUT */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #6b4f4f;
+    box-shadow: 0 0 5px rgba(107, 79, 79, 0.5);
+}
+
+/* BOTÃO */
+button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #6b4f4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a3f3f;
+    transform: scale(1.05);
+}
