@@ -6,19 +6,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
     if(btnPedidos){
         btnPedidos.addEventListener("click", function(){
-            window.location.href = "pedidos.html";
+            window.location.href = "/pedidos";
         });
     }
 
     if(btnLogin){
         btnLogin.addEventListener("click", function(){
-            window.location.href = "login.html";
+            window.location.href = "/login";
         });
     }
 
     if(btnCadastro){
         btnCadastro.addEventListener("click", function(){
-            window.location.href = "cadastro.html";
+            window.location.href = "/cadastro";
         });
     }
 
