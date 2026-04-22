@@ -1,11 +1,13 @@
 package projectzero.projectwp_test.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-//Usando o lombok para fazer os getters e setters
-@Getter
-@Setter
+//Usando o lombok para fazer os getters e setters, toString, equals e hashCode.
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private int id;
     private String nome;
