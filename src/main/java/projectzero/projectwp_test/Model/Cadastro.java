@@ -1,4 +1,4 @@
-package projectzero.projectwp_test.model;
+package projectzero.projectwp_test.Model;
 
 import lombok.Getter;
 import lombok.Setter;

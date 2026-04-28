@@ -13,13 +13,15 @@ public class PedidosController {
         return "pedidos";
     }
 
+    /*
     @GetMapping("/pedidos")
     public String pedidos(HttpSession sessao, Model model) {
 
         String usuario = (String) sessao.getAttribute("usuarioLogado");
 
-        model.addAttribute("usuario", usuario);
+        model.addText(String body);
 
         return "pedidos";
     }
+    */
 }

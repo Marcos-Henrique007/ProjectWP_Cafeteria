@@ -19,7 +19,7 @@ public class LoginController {
 
         if ("admin@gmail.com".equals(usuario) && "123".equals(senha)) {
             sessao.setAttribute("usuarioLogado", usuario);
-            return "redirect:/pedidos";
+            return "redirect:/home";
         } else {
             return "redirect:/login";
         }
@@ -27,7 +27,7 @@ public class LoginController {
 
     @GetMapping("/logout")
     public String logout(HttpSession sessao) {
-        sessao.invalidate(); // 🔥 mata a sessão
+        sessao.invalidate(); // mata a sessão
         return "redirect:/login";
     }
 }

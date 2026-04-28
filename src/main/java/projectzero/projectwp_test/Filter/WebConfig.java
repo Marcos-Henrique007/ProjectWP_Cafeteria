@@ -1,6 +1,5 @@
-package projectzero.projectwp_test.filter;
+package projectzero.projectwp_test.Filter;
 
-import projectzero.projectwp_test.filter.AuthInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.*;
 
@@ -14,7 +13,8 @@ public class WebConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/login",
                         "/css/**",
                         "/js/**",
-                        "/images/**"
+                        "/images/**",
+                        "/cadastro"
                 ); // libera login e css
     }
 }

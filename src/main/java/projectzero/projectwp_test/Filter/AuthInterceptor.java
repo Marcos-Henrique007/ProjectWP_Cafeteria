@@ -1,4 +1,4 @@
-package projectzero.projectwp_test.filter;
+package projectzero.projectwp_test.Filter;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
