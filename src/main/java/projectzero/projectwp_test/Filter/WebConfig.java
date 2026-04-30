@@ -14,7 +14,8 @@ public class WebConfig implements WebMvcConfigurer {
                         "/css/**",
                         "/js/**",
                         "/images/**",
-                        "/cadastro"
+                        "/cadastro",
+                        "/home"
                 ); // libera login e css
     }
 }
