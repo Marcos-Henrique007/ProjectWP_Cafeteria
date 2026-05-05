@@ -1,6 +1,6 @@
 package projectzero.projectwp_test.Controller;
 
-import ch.qos.logback.core.model.Model;
+import org.springframework.ui.Model;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,19 +9,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class PedidosController {
 
     @GetMapping("/pedidos")
-    public String pedidos() {
-        return "pedidos";
-    }
-
-    /*
-    @GetMapping("/pedidos")
     public String pedidos(HttpSession sessao, Model model) {
 
         String usuario = (String) sessao.getAttribute("usuarioLogado");
 
-        model.addText(String body);
+        model.addAttribute("usuario", usuario);
 
         return "pedidos";
     }
-    */
 }
